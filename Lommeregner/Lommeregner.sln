@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.12.35707.178 d17.12
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lommeregner", "Lommeregner\Lommeregner.csproj", "{CC37AAE1-E4EE-492E-8913-F8277B36A321}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CalculatorTests", "CalculatorTests\CalculatorTests.csproj", "{2D6DED5C-4256-433F-8CC0-A500BA94E379}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{CC37AAE1-E4EE-492E-8913-F8277B36A321}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CC37AAE1-E4EE-492E-8913-F8277B36A321}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CC37AAE1-E4EE-492E-8913-F8277B36A321}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CC37AAE1-E4EE-492E-8913-F8277B36A321}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2D6DED5C-4256-433F-8CC0-A500BA94E379}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2D6DED5C-4256-433F-8CC0-A500BA94E379}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2D6DED5C-4256-433F-8CC0-A500BA94E379}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2D6DED5C-4256-433F-8CC0-A500BA94E379}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
