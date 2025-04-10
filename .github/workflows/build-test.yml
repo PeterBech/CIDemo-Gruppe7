@@ -26,5 +26,5 @@ jobs:
       run: dotnet build --no-restore
       working-directory: Lommeregner
     - name: Test-path
-      run: dotnet sln list
+      run: dotnet test ./CalculatorTests/CalculatorTests.csproj --no-build --verbosity normal
       working-directory: Lommeregner
