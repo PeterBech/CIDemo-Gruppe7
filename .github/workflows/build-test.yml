@@ -16,7 +16,7 @@ jobs:
     - name: Setup .NET
       uses: actions/setup-dotnet@v4
       with:
-        dotnet-version: 8.0.x  # <- Replace with your desired version, e.g., 7.0.x or 6.0.x
+        dotnet-version: 8.0.x
 
     - name: Restore dependencies
       run: dotnet restore
@@ -25,6 +25,30 @@ jobs:
     - name: Build
       run: dotnet build --no-restore
       working-directory: Lommeregner
+
     - name: Test-path
       run: dotnet test ./CalculatorTests/CalculatorTests.csproj --no-build --verbosity normal
       working-directory: Lommeregner
+
+  publish:
+    needs: build
+    runs-on: ubuntu-latest
+    if: github.ref == 'refs/heads/main'
+
+    steps:
+    - uses: actions/checkout@v4
+
+    - name: Setup .NET
+      uses: actions/setup-dotnet@v4
+      with:
+        dotnet-version: 8.0.x
+
+    - name: Publish
+      run: dotnet publish -c Release -o ./publish
+      working-directory: Lommeregner
+
+    - name: Upload artifact
+      uses: actions/upload-artifact@v4
+      with:
+        name: calculator-app
+        path: ./publish
