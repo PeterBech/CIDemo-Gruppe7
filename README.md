@@ -7,3 +7,5 @@ Gruppen indeholder:
 - Burak
 - Kenneth
 - Bo
+
+Dettte er en totalt badass opdatering af vores Readme fil
