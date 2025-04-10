@@ -27,5 +27,5 @@ jobs:
       working-directory: Lommeregner
 
     - name: Test
-      run: dotnet test Lommeregner/CalculatorTests/CalculatorTests.csproj --no-build --verbosity normal
+      run: dotnet test ./Lommeregner/CalculatorTests/CalculatorTests.csproj --no-build --verbosity normal
       working-directory: Lommeregner
