@@ -16,14 +16,16 @@ jobs:
     - name: Setup .NET
       uses: actions/setup-dotnet@v4
       with:
-        dotnet-version: 8.0.x  # <- Erstat med din ønskede version, fx 7.0.x eller 6.0.x
+        dotnet-version: 8.0.x  # <- Replace with your desired version, e.g., 7.0.x or 6.0.x
 
     - name: Restore dependencies
       run: dotnet restore
+      working-directory: Lommeregner
 
     - name: Build
       run: dotnet build --no-restore
+      working-directory: Lommeregner
 
     - name: Test
       run: dotnet test --no-build --verbosity normal
-
+      working-directory: CalculatorTests
